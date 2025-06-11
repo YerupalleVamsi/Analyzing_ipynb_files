@@ -31,6 +31,7 @@ if orig_file and test_file:
 
         ai_count = sum(1 for r in ai_results if "AI-generated" in r)
         st.info(f"{ai_count} of {len(ai_results)} changed cells likely AI-generated")
-        
+
         for idx, result in enumerate(ai_results):
             st.markdown(f"**Cell {idx+1} Judgment:** {result}")
+
